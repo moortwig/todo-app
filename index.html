@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> </title>
+	<meta charset="utf-8" />
+
+	<!-- <meta name="viewport" content="initial-scale=1" /> -->
+	<link rel="stylesheet" type="text/css"  href="css/normalize.css">
+	<link rel="stylesheet" type="text/css"  href="css/fullscreen.css">
+	<link rel="stylesheet" type="text/css"  href="css/style.css">
+
+	<!-- web fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Squada+One' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+<div class="wrapper">
+	<div class="full-screen-img">
+		<div class="overlay">
+	
+			<header></header>
+
+			<div class="column-wrapper">
+				<div class="column">
+					<h1>Things to do when in London</h1>
+				</div><!-- .column-left -->
+
+				<div class="column">
+					<section class="todo-form-wrapper">
+						<form id="addTodo">
+							<input type="text" placeholder="Task" id="task" /><br />
+							<textarea placeholder="Description" id="description"></textarea><br />
+							<input type="button" class="button" onclick="setTask()" value="Add" />
+							<!-- <input type="button" onclick="getTasks()" value="Display tasks" /> -->
+						</form>
+					</section>
+
+					<section class="tasks"></section>
+
+					<section class="done"></section>
+				</div><!-- .column-right -->
+			</div><!-- .column-wrapper -->
+
+		</div><!-- .overlay -->
+	</div><!-- .full-screen-img -->
+</div><!-- .wrapper -->
+
+<!-- JavaScript -->
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

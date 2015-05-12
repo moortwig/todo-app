@@ -1,0 +1,39 @@
+html {
+	height: 100%; /* Required for full screens */
+}
+
+body {
+	height: 100%; /* Required for full screens */
+	padding: 0;
+}
+
+/* Required for full screens */
+.wrapper {
+	height: 100%;
+	width: 100%;
+}
+
+/* full screen background image, scales and stretches */
+.full-screen-img {
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+/* simple fullscreen without image */
+.full-screen {
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+/* Full screen overlay */
+.overlay {
+	background-color: rgba(255,255,255,0.5);
+	display: table;
+	width: 100%;
+	height: 100%;
+}

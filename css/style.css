@@ -1,0 +1,112 @@
+body {
+	background-color: rgb(217,214,219);
+}
+
+
+p, dd, dt, h1 {
+	color: rgb(45,45,45);
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* DEBUGGING */
+div {
+	/*outline: 1px solid white;*/
+}
+
+.full-screen-img {
+	background-image: url('../img/london-bg.jpg');
+}
+
+.todo-form-wrapper {
+	margin: 4em auto;
+	width: 350px;
+}
+
+input {
+	border: 1px solid silver;
+	display: block;
+	margin: 0 auto;
+	padding: 5px;
+	width: 340px;
+}
+
+textarea {
+	border: 1px solid silver;
+	display: block;
+	height: 7em;
+	margin: 0 auto;
+	padding: 5px;
+	width: 340px;
+}
+
+.button {
+	background-color: rgb(113,149,85);
+	border: 1px solid rgb(67,89,51);
+	color: rgb(240,244,238);
+	float: right;
+	padding: 0.5em;
+	text-align: center;
+	width: 70px;
+}
+
+input, textarea, .button {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.button:hover {
+	background-color: rgb(67,89,51);
+	transition: background-color 0.5s ease-out;
+}
+
+
+.tasks {
+	margin: 0 auto;
+	width: 350px;
+}
+
+	
+dl {
+	background-color: rgb(251,250,251);
+	-moz-border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	border-radius: 5px 5px 0px 0px;
+	display: block;
+	margin: 1.5em auto;
+	overflow: hidden;
+}
+
+dd {
+	background-color: rgb(241,236,241);
+	border-bottom: 1px solid silver;
+	font-weight: bold;
+	margin: 0;
+	padding: 0.5em;
+}
+
+dt {
+	margin: 0;
+	padding: 0.5em;
+}
+
+
+/* COLUMNS */
+.column-wrapper {
+	margin: 20px auto;
+	margin-left: 15%;
+	width: 80%;
+}
+
+
+.column {
+	float: left;
+	min-width: 33%;
+	max-width: 350px;
+	padding: 1em;
+}
+
+.column h1 {
+	font-size: 4em;
+	margin-top: 50px;
+}
