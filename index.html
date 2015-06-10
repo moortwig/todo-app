@@ -9,6 +9,9 @@
 	<link rel="stylesheet" type="text/css"  href="css/fullscreen.css">
 	<link rel="stylesheet" type="text/css"  href="css/style.css">
 
+
+	<link rel="stylesheet" type="text/css"  href="css/style.css">
+
 	<!-- web fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Squada+One' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -24,22 +27,33 @@
 
 			<div class="column-wrapper">
 				<div class="column">
-					<h1>Things to do when in London</h1>
+					<h1>Things to do when travelling</h1>
+					<section class="todo-form-wrapper">
+						<form id="addTodo">
+						<!-- <form id="addTodo" onsubmit="setTodo()"> -->
+							<span class="feedback default-message">* = required</span>
+							<span class="feedback error-message">You need to put something in both fields!</span>
+							<label for="todo">I want to do this during my visit<span class="required">*</span></label>
+							<input type="text" id="todo" /><br />
+							<label for="description">Useful information<span class="required">*</span></label>
+							<textarea id="description"></textarea><br />
+							<!-- <input type="submit" class="button" value="Add" /> -->
+							<span class="confirm-message">Are you sure? It will delete the whole list!</span>
+							<div>
+								<input type="button" id="addTodoButton" class="button" onclick="setTodo()" value="Add" />
+								<input type="button" id="clearTodoButton" class="button button-delete" onclick="clearTodo()" value="Clear all" />
+								<input type="button" class="button button-confirm" onclick="confirmClear(true)" value="Clear all" />
+								<input type="button" class="button button-confirm" onclick="confirmClear(false)" value="Cancel" />
+							</div>
+						</form>
+					</section>
 				</div><!-- .column-left -->
 
 				<div class="column">
-					<section class="todo-form-wrapper">
-						<form id="addTodo">
-							<input type="text" placeholder="Task" id="task" /><br />
-							<textarea placeholder="Description" id="description"></textarea><br />
-							<input type="button" class="button" onclick="setTask()" value="Add" />
-							<!-- <input type="button" onclick="getTasks()" value="Display tasks" /> -->
-						</form>
-					</section>
 
-					<section class="tasks"></section>
+					<section class="todos"></section>
 
-					<section class="done"></section>
+					<!-- <section class="done"></section> -->
 				</div><!-- .column-right -->
 			</div><!-- .column-wrapper -->
 

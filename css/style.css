@@ -3,7 +3,7 @@ body {
 }
 
 
-p, dd, dt, h1 {
+p, dd, dt, h1, label, span {
 	color: rgb(45,45,45);
 	font-family: 'Open Sans', sans-serif;
 }
@@ -18,8 +18,45 @@ div {
 }
 
 .todo-form-wrapper {
+	background-color: silver;
 	margin: 4em auto;
+	padding: 1em 1em 3em 1em; /* T R B L */
 	width: 350px;
+}
+
+.feedback {
+	font-size: 0.8em;
+	font-style: italic;
+}
+
+.error-message {
+	display: none;
+	color: red;
+}
+
+.required {
+	color: red;
+}
+
+.confirm-message {
+	outline: 1px solid white;
+	display: none;
+}
+
+.todo-form-wrapper,
+input,
+textarea,
+.button {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+label {
+	display: block;
+	font-size: 1.2em;
+	margin-top: 8px;
 }
 
 input {
@@ -46,27 +83,36 @@ textarea {
 	float: right;
 	padding: 0.5em;
 	text-align: center;
-	width: 70px;
+	width: 90px;
+	margin: 5px;
 }
 
-input, textarea, .button {
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
+
+
+.button-delete {
+	background-color: rgb(231,69,69);
+	float: right;
+	display: none;
+	/*padding: 0.2em;
+	width: 70px;*/
 }
+
+.button-confirm {
+	/*background-color: rgb(231,69,69);*/
+	display: none;
+}
+
 
 .button:hover {
 	background-color: rgb(67,89,51);
 	transition: background-color 0.5s ease-out;
 }
 
-
 .tasks {
 	margin: 0 auto;
 	width: 350px;
 }
 
-	
 dl {
 	background-color: rgb(251,250,251);
 	-moz-border-radius: 5px 5px 0px 0px;
@@ -83,6 +129,14 @@ dd {
 	font-weight: bold;
 	margin: 0;
 	padding: 0.5em;
+}
+
+dd span {
+	/*display: block;*/
+}
+
+.checkbox {
+	float: right;
 }
 
 dt {
@@ -108,5 +162,17 @@ dt {
 
 .column h1 {
 	font-size: 4em;
-	margin-top: 2em;
+	margin-top: 0;
+}
+
+
+@media print {
+  h1,
+  .todo-form-wrapper {
+  	display: none;
+  }
+
+  .column {
+  	width: 90%;
+  }
 }
