@@ -1,48 +1,58 @@
+/*
+	BASIC CSS
+*/
 body {
 	background-color: rgb(217,214,219);
 }
-
-
 p, dd, dt, h1, label, span {
 	color: rgb(45,45,45);
 	font-family: 'Open Sans', sans-serif;
 }
-
-/* DEBUGGING */
-div {
-	/*outline: 1px solid white;*/
-}
-
 .full-screen-img {
 	background-image: url('../img/london-bg.jpg');
 }
 
-.todo-form-wrapper {
-	background-color: rgb(160,177,203);
-	margin: 4em auto;
-	padding: 1em 1em 3em 1em;
-	width: 350px;
+
+
+/* 
+	DEBUGGING 
+*/
+div {
+	/*outline: 1px solid white;*/
 }
 
+
+
+/*
+	TEXT FEEDBACK
+*/
 .feedback {
 	font-size: 0.8em;
 	font-style: italic;
 }
-
 .error-message {
 	display: none;
 	color: red;
 }
-
 .required {
 	color: red;
 }
-
 .confirm-message {
 	outline: 1px solid white;
 	display: none;
 }
 
+
+
+/*
+	FORM
+*/
+.todo-form-wrapper {
+	background-color: rgb(192,201,216);
+	margin: 4em auto;
+	padding: 1em 1em 3em 1em;
+	width: 350px;
+}
 .todo-form-wrapper,
 input,
 textarea,
@@ -51,14 +61,11 @@ textarea,
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
 }
-
-
 label {
 	display: block;
 	font-size: 1.2em;
 	margin-top: 8px;
 }
-
 input {
 	border: 1px solid silver;
 	display: block;
@@ -66,7 +73,6 @@ input {
 	padding: 5px;
 	width: 340px;
 }
-
 textarea {
 	border: 1px solid silver;
 	display: block;
@@ -76,6 +82,41 @@ textarea {
 	width: 340px;
 }
 
+
+
+/*
+	LIST
+*/
+.tasks {
+	margin: 0 auto;
+	width: 350px;
+}
+dl {
+	background-color: rgb(251,250,251);
+	-moz-border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	border-radius: 5px 5px 0px 0px;
+	display: block;
+	margin: 1.5em auto;
+	overflow: hidden;
+}
+dd {
+	background-color: rgb(192,201,216);
+	border-bottom: 1px solid silver;
+	font-weight: bold;
+	margin: 0;
+	padding: 0.5em;
+}
+dt {
+	margin: 0;
+	padding: 0.5em;
+}
+
+
+
+/*
+	BUTTONS
+*/
 .button {
 	background-color: rgb(113,149,85);
 	border: 1px solid rgb(67,89,51);
@@ -86,9 +127,6 @@ textarea {
 	width: 90px;
 	margin: 5px;
 }
-
-
-
 .button-delete {
 	background-color: rgb(231,69,69);
 	float: right;
@@ -96,91 +134,53 @@ textarea {
 	/*padding: 0.2em;
 	width: 70px;*/
 }
-
 .button-confirm {
 	/*background-color: rgb(231,69,69);*/
 	display: none;
 }
-
-
 .button:hover {
 	background-color: rgb(67,89,51);
 	transition: background-color 0.5s ease-out;
 }
-
-.tasks {
-	margin: 0 auto;
-	width: 350px;
-}
-
-dl {
-	background-color: rgb(251,250,251);
-	-moz-border-radius: 5px 5px 0px 0px;
-	-webkit-border-radius: 5px 5px 0px 0px;
-	border-radius: 5px 5px 0px 0px;
-	display: block;
-	margin: 1.5em auto;
-	overflow: hidden;
-}
-
-dd {
-	background-color: rgb(160,177,203);
-	border-bottom: 1px solid silver;
-	font-weight: bold;
-	margin: 0;
-	padding: 0.5em;
+.button-print {
+	display: none;
+	margin-bottom: 10px;
 }
 
 
-.checkbox {
-	float: right;
-}
 
-dt {
-	margin: 0;
-	padding: 0.5em;
-}
-
-
-/* COLUMNS */
+/* 
+	COLUMNS 
+*/
 .column-wrapper {
 	margin: 20px auto;
 	margin-left: 15%;
 	width: 80%;
 }
-
-
 .column {
 	float: left;
 	min-width: 33%;
 	max-width: 350px;
 	padding: 1em;
 }
-
 .column h1 {
 	font-size: 4em;
 	margin-top: 0;
 }
 
-.button-print {
-	display: block;
-	margin-bottom: 10px;
-}
 
 
-
-
-
+/*
+	PRINT
+*/
 @media print {
   h1,
   .todo-form-wrapper {
   	display: none;
   }
-
   .column {
   	width: 90%;
   }
-
   .button-print {
   	display: none;
   }
