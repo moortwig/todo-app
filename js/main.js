@@ -98,3 +98,7 @@ var confirmClear = function(confirmation) {
 		$('.button-confirm').hide();
 	}
 }
+
+var printList = function() {
+	window.print();
+}
