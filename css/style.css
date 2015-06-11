@@ -18,9 +18,9 @@ div {
 }
 
 .todo-form-wrapper {
-	background-color: silver;
+	background-color: rgb(160,177,203);
 	margin: 4em auto;
-	padding: 1em 1em 3em 1em; /* T R B L */
+	padding: 1em 1em 3em 1em;
 	width: 350px;
 }
 
@@ -124,16 +124,13 @@ dl {
 }
 
 dd {
-	background-color: rgb(241,236,241);
+	background-color: rgb(160,177,203);
 	border-bottom: 1px solid silver;
 	font-weight: bold;
 	margin: 0;
 	padding: 0.5em;
 }
 
-dd span {
-	/*display: block;*/
-}
 
 .checkbox {
 	float: right;
@@ -165,6 +162,14 @@ dt {
 	margin-top: 0;
 }
 
+.button-print {
+	display: block;
+	margin-bottom: 10px;
+}
+
+
+
+
 
 @media print {
   h1,
@@ -174,5 +179,9 @@ dt {
 
   .column {
   	width: 90%;
+  }
+
+  .button-print {
+  	display: none;
   }
 }
