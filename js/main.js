@@ -47,6 +47,7 @@ var loadTodos = function() {
 	}
 }
 
+
 // TODO change name to addTodo
 var setTodo = function() {
 	console.log('setTodo');
